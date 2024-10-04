@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bouncing cube</title>
+    <style>
+       body{
+        margin:0px;
+        height:500vh;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        background-color:rgb(25, 174, 219);
+        
+       }
+       .cube {
+      width: 60px;
+      height: 56px;
+      background-color: #50150b;
+      border-radius: 60%;
+      position: absolute;
+      bottom: 0;
+      animation: bounce 1s infinite ease-in-out;
+    }
+       @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0); /* Ball at the bottom */
+      }
+      50% {
+        transform: translateY(-300px); /* Ball at the peak height */
+      }
+    }
+    </style>
+</head>
+<body>
+    <div class="cube">cube</div>
+    
+</body>
+</html>
